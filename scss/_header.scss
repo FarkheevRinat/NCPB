@@ -1,0 +1,118 @@
+.header {
+    background-color: $color-primary;
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: none;
+    height: 5.3rem;
+    width: 5.3rem;
+    background-color: $color-primary;
+    box-shadow: 
+        -0.4rem -0.3rem 0.6rem #2C2E35, 
+        0.3rem 0.3rem 0.6rem #1F2126;
+    border-radius: 50%;
+    margin-right: 5rem;
+
+    span {
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        color: $color-light;
+        text-transform: uppercase;
+        margin-bottom: 0.3rem;
+    }
+
+    &__icon {
+        fill: $color-light;
+        height: 1.9rem;
+        width: 3.5rem;
+    }
+}
+
+.site-name {
+    width: 100%;
+    max-width: 15.7rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $color-light;
+    text-transform: uppercase;
+    margin-right: 6.8rem;
+}
+
+.get-there {
+    display: flex;
+    align-items: center;
+    flex: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: $color-light;
+    margin-right: 6.5rem;
+
+    &__icon {
+        width: 1.3rem;
+        height: 1.7rem;
+        fill: $color-light;
+        margin-right: 1rem;
+    }
+
+    &__triangle {
+        width: 0.7rem;
+        height: 0.5rem;
+        fill: $color-light;
+        margin-left: 0.7rem;
+    }
+}
+
+.logo {
+    flex: none;
+}
+
+.header-logo {
+    width: 5.1rem;
+    height: 6.5rem;
+    margin-right: 5rem;
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    &__icon {
+        max-width: 2rem;
+        height: 1.6rem;
+        fill: $color-light;
+        margin-right: 1rem;
+    }
+}
+
+.header-contacts__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-right: 8.6rem;
+    }    
+}
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: $color-light;
+}

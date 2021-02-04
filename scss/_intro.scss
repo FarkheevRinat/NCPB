@@ -1,0 +1,27 @@
+.intro {
+    height: 44rem;
+    background-image: 
+        linear-gradient(352.88deg, #26282F 0%, rgba(38, 40, 47, 0.35) 91.62%),
+        url('../img/intro-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3.5rem;
+    }
+}
+
+.intro-title {
+    width: 100%;
+    max-width: 65rem;
+    font-size: 5rem;
+    line-height: 5.8rem;
+    color: $color-light;
+    text-transform: uppercase;
+    text-align: center;
+}
