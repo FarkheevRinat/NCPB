@@ -11,6 +11,10 @@
     box-shadow: 1rem 1rem 2.4rem rgba(0, 0, 0, 0.03);
     border-radius: 0.3rem;
 
+    @media (max-width: 575px) {
+        padding: 4.5rem 5rem 3.5rem;
+    }
+
     &::before {
         content: '';
         display: block;
@@ -32,12 +36,25 @@
     align-items: flex-end;
     margin: -1.7rem;
     margin-bottom: 2.8rem;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contact-form__label {
     position: relative;
     margin: 1.7rem;
     width: calc(100% / 3 - 3.4rem);
+
+    @media (max-width: 767px) {
+        width: 80%;
+    }
+
+    @media (max-width: 575px) {
+        width: 90%;
+    }
 }
 
 .contact-form__name {
@@ -99,6 +116,7 @@
 }
 
 .contact-form__info {
+    display: inline-block;
     max-width: 23.7rem;
     font-size: 0.9rem;
     font-weight: 500;
@@ -109,6 +127,15 @@
 .contact-form__button {
     margin: 0 auto;
     width: 100%;
+    transition: all .2s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
 }
 
 .form-button {
@@ -137,4 +164,10 @@
     position: absolute;
     top: 10.5rem;
     right: -5.5rem;
+    width: 32rem;
+    height: 28.4rem;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }

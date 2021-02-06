@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/main.css">
+
     <title>Центр пожарной безопасности-НН | Огнезащитная обработка</title>
 </head>
 <body>
@@ -27,13 +30,13 @@
             </a>
             <ul class="header-contacts">
                 <li class="header-contacts__item">
-                    <a href="mailto:cpbnn@mail.ru" class="header-contacts__link">
+                    <a href="mailto:cpbnn@mail.ru" class="header-contacts__link header-contacts__link--email">
                         <svg class="header-contacts__icon"><use xlink:href="img/sprite.svg#header-contacts__icon-email"></svg>
                         <span>cpbnn@mail.ru</span>
                     </a>
                 </li>
                 <li class="header-contacts__item">
-                    <a href="tel:+78312777588" class="header-contacts__link">
+                    <a href="tel:+78312777588" class="header-contacts__link header-contacts__link--phone">
                         <svg class="header-contacts__icon"><use xlink:href="img/sprite.svg#header-contacts__icon-phone"></svg>
                         <span>+7 (831) 277-75-88</span>
                     </a>
@@ -90,12 +93,12 @@
                 <div class="contact-form__fields">
                     <label class="contact-form__label">
                         <span class="contact-form__name">Имя*</span>
-                        <input type="text" class="contact-form__input" placeholder="Ваше Имя">
+                        <input type="text" class="contact-form__input" placeholder="Ваше Имя" required>
                         <svg class="contact-form__icon"><use xlink:href="img/sprite.svg#user-icon-form"></svg>
                     </label>
                     <label class="contact-form__label">
                         <span class="contact-form__name">Телефон*</span>
-                        <input type="text" class="contact-form__input" placeholder="+ 7 (___) ___ — __ — __">
+                        <input type="text" class="contact-form__input" placeholder="+ 7 (___) ___ — __ — __" required>
                         <svg class="contact-form__icon"><use xlink:href="img/sprite.svg#phone-icon-form"></svg>
                     </label>
                     <label class="contact-form__label">
@@ -164,7 +167,37 @@
                 <span class="section-title__text">Необходимое оборудование</span>
                 <svg class="section-title__icon"><use xlink:href="img/sprite.svg#section-title__icon"></svg>
             </h2>
-            <ul class="equipment__list">
+            <ul class="equipment__list owl-carousel">
+                <li class="equipment__item"> 
+                    <div class="equipment__img-box">
+                        <img src="./img/equipment-01.png" alt="Оборудование" class="equipment__img">
+                    </div>
+                    <p class="equipment__name">Пульт контроля и управления «С 2000 М»</p>
+                </li>
+                <li class="equipment__item">                 
+                    <div class="equipment__img-box">
+                        <img src="./img/equipment-01.png" alt="Оборудование" class="equipment__img">
+                    </div>
+                    <p class="equipment__name">Пульт контроля и управления «С 2000 М»</p>
+                </li>
+                <li class="equipment__item">
+                    <div class="equipment__img-box">
+                        <img src="./img/equipment-01.png" alt="Оборудование" class="equipment__img">
+                    </div>
+                    <p class="equipment__name">Пульт контроля и управления «С 2000 М»</p>
+                </li>
+                <li class="equipment__item">
+                    <div class="equipment__img-box">
+                        <img src="./img/equipment-01.png" alt="Оборудование" class="equipment__img">
+                    </div>
+                    <p class="equipment__name">Пульт контроля и управления «С 2000 М»</p>
+                </li>
+                <li class="equipment__item">
+                    <div class="equipment__img-box">
+                        <img src="./img/equipment-01.png" alt="Оборудование" class="equipment__img">
+                    </div>
+                    <p class="equipment__name">Пульт контроля и управления «С 2000 М»</p>
+                </li>
                 <li class="equipment__item">
                     <div class="equipment__img-box">
                         <img src="./img/equipment-01.png" alt="Оборудование" class="equipment__img">
@@ -216,12 +249,12 @@
                 <div class="contact-form__fields">
                     <label class="contact-form__label">
                         <span class="contact-form__name">Имя*</span>
-                        <input type="text" class="contact-form__input" placeholder="Ваше Имя">
+                        <input type="text" class="contact-form__input" placeholder="Ваше Имя" required>
                         <svg class="contact-form__icon"><use xlink:href="img/sprite.svg#user-icon-form"></svg>
                     </label>
                     <label class="contact-form__label">
                         <span class="contact-form__name">Телефон*</span>
-                        <input type="text" class="contact-form__input" placeholder="+ 7 (___) ___ — __ — __">
+                        <input type="text" class="contact-form__input" placeholder="+ 7 (___) ___ — __ — __" required>
                         <svg class="contact-form__icon"><use xlink:href="img/sprite.svg#phone-icon-form"></svg>
                     </label>
                     <label class="contact-form__label">
@@ -279,6 +312,8 @@
         </div>
     </footer>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

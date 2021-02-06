@@ -8,6 +8,14 @@
 
 html {
     font-size: 10px;
+
+    @media (max-width: 1199px) {
+        font-size: 9px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 8px;
+    }
 }
 
 body {
@@ -74,6 +82,13 @@ strong {
     font-size: 3.1rem;
     line-height: 5.8rem;
     text-transform: uppercase;
+
+    @media (max-width: 575px) {
+        text-align: center;
+        line-height: 1.4;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 .section-title__icon {

@@ -6,6 +6,10 @@
         align-items: center;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        
+        @media (max-width: 575px) {
+            flex-direction: row-reverse;
+        }
     }
 }
 
@@ -23,6 +27,14 @@
         0.3rem 0.3rem 0.6rem #1F2126;
     border-radius: 50%;
     margin-right: 5rem;
+
+    @media (max-width: 767px) {
+        margin-right: auto;
+    }
+
+    @media (max-width: 575px) {
+        margin-right: 0;
+    }
 
     span {
         font-weight: 500;
@@ -42,13 +54,21 @@
 
 .site-name {
     width: 100%;
-    max-width: 15.7rem;
+    max-width: 15.8rem;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: $color-light;
     text-transform: uppercase;
     margin-right: 6.8rem;
+
+    @media (max-width: 991px) {
+        margin-right: 3rem;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .get-there {
@@ -61,11 +81,34 @@
     color: $color-light;
     margin-right: 6.5rem;
 
+    @media (max-width: 991px) {
+        margin-right: 3rem;
+    }
+
+    @media (max-width: 575px) {
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        box-shadow: -4px -3px 6px #2C2E35, 3px 3px 6px #1F2126;
+        border-radius: 50%;
+        margin-left: auto;
+    }
+        
+    @media (max-width: 575px) {
+        & span {
+            display: none;
+        }
+    }
+
     &__icon {
         width: 1.3rem;
         height: 1.7rem;
         fill: $color-light;
         margin-right: 1rem;
+
+        @media (max-width: 575px) {
+            margin-right: 0;
+        }
     }
 
     &__triangle {
@@ -73,6 +116,10 @@
         height: 0.5rem;
         fill: $color-light;
         margin-left: 0.7rem;
+        
+        @media (max-width: 575px) {
+            display: none;
+        }
     }
 }
 
@@ -84,12 +131,28 @@
     width: 5.1rem;
     height: 6.5rem;
     margin-right: 5rem;
+
+    @media (max-width: 767px) {
+        margin-right: 0;
+    }
+
+    @media (max-width: 575px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .header-contacts {
     display: flex;
     align-items: center;
     margin-left: auto;
+    flex: none;
+
+    @media (max-width: 575px) {
+        flex-direction: row-reverse;
+        margin-left: 0;
+        margin-right: auto;
+    }
 
     &__icon {
         max-width: 2rem;
@@ -105,7 +168,11 @@
 
     &:not(:last-child) {
         margin-right: 8.6rem;
-    }    
+
+        @media (max-width: 991px) {
+            margin-right: 3rem;
+        }
+    }   
 }
 
 .header-contacts__link {
@@ -114,5 +181,31 @@
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.7rem;
-    color: $color-light;
+    white-space: nowrap;
+    color: $color-light; 
+        
+    @media (max-width: 575px) {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: $color-light;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--email {
+            background-image: url('../img/email-icon-mobile.svg');
+        }
+
+        &--phone {
+            background-image: url('../img/phone-icon-mobile.svg');
+            margin-right: 23px;
+        }
+    }
+        
+    @media (max-width: 575px) {
+        & span,
+        & svg {
+            display: none;
+        }
+    }
 }
