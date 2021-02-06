@@ -193,18 +193,18 @@
         background-position: center;
 
         &--email {
-            background-image: url('../img/email-icon-mobile.svg');
+            background-image: url('../img/svg-icons/email-icon-mobile.svg');
         }
 
         &--phone {
-            background-image: url('../img/phone-icon-mobile.svg');
+            background-image: url('../img/svg-icons/phone-icon-mobile.svg');
             margin-right: 23px;
         }
     }
         
     @media (max-width: 575px) {
         & span,
-        & svg {
+        & img {
             display: none;
         }
     }
